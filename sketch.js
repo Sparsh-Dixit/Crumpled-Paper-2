@@ -16,7 +16,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	
-	paper=new Paper(200,450,70);
+	paper=new Paper(200,450,50);
 	ground=new Ground(width/2,610,width,20);
 	dustbin=new Dustbin(1200,590);
 	
@@ -47,7 +47,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-	Matter.Body.applyForce(paper.body,paper.body.position,{x:285,y:-285})
+	Matter.Body.applyForce(paper.body,paper.body.position,{x:150,y:-150})
 	}
 	}
 
